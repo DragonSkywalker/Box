@@ -2,13 +2,18 @@ extends Node2D
 
 
 var layer = preload("res://Objects/layer.tscn")
+var box = preload("res://Objects/box.tscn")
 @onready var cursor = get_node("Cursor")
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept"):
 		var currentLayer = get_node("Layer" + str(cursor.gridPos.y))
 		if currentLayer:
-			print(currentLayer.name)
+			var boxTemp = box.instantiate()
+			boxTemp.position.y = -1000
+			boxTemp.position.x = Game.boxLength * cursor.gridPos.x
+			boxTemp.layerControl(cursor.gridPos.y)
+			currentLayer.add_child(boxTemp)
 		else:
 			var layerTemp = layer.instantiate()
 			layerTemp.new(cursor.gridPos.y)
@@ -23,9 +28,9 @@ func _process(delta):
 		sort()
 
 func sort():
-	var nodesDrawn = 0s
+	var nodesDrawn = 0
 	for i in range(-15, 17):
-		var tempNode = get_node("Layer" + str(i))
+		var tempNode = get_node_or_null("Layer" + str(i))
 		if tempNode:
 			move_child(tempNode, nodesDrawn)
 			nodesDrawn += 1

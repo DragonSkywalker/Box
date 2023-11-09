@@ -8,3 +8,7 @@ ToDo:
 			give cursor collision (a smaller box in ceter)
 			if collide with a box on the same layer, move it up a space
 			and before moving the cursor, send it to ground level then move it
+
+
+	maybe name layer something else 
+	since it can also mean drawing layer and collision layer
