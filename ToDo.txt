@@ -2,6 +2,7 @@ Current:
 	Make drawing order of layers work
 
 ToDo:
+	Fix the new layer's x position 
 	Make Boxes not rely on gravity
 	Make cursor be on the place where there would be a box
 		idea: 
@@ -9,6 +10,7 @@ ToDo:
 			if collide with a box on the same layer, move it up a space
 			and before moving the cursor, send it to ground level then move it
 
+	Make cursor 3D
 
 	maybe name layer something else 
 	since it can also mean drawing layer and collision layer
