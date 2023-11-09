@@ -1,0 +1,10 @@
+Current:
+	Make drawing order of layers work
+
+ToDo:
+	Make Boxes not rely on gravity
+	Make cursor be on the place where there would be a box
+		idea: 
+			give cursor collision (a smaller box in ceter)
+			if collide with a box on the same layer, move it up a space
+			and before moving the cursor, send it to ground level then move it
