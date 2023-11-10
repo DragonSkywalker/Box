@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://wsa0flwxfhyc"]
 
-[ext_resource type="PackedScene" uid="uid://caywgwuw2y87" path="res://Objects/box.tscn" id="1_ieelh"]
-[ext_resource type="Script" path="res://Objects/layer.gd" id="1_jtqmk"]
+[ext_resource type="Script" path="res://Objects/box_layer.gd" id="1_nin2m"]
+[ext_resource type="PackedScene" uid="uid://caywgwuw2y87" path="res://Objects/box.tscn" id="2_moy3i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yakyo"]
 size = Vector2(1378, 94)
 
-[node name="Layer" type="Node2D"]
-script = ExtResource("1_jtqmk")
+[node name="BoxLayer" type="Node2D"]
+script = ExtResource("1_nin2m")
 
 [node name="Floor" type="StaticBody2D" parent="."]
 position = Vector2(0, 47)
@@ -25,7 +25,7 @@ offset_bottom = 47.0
 scale = Vector2(999, 1)
 shape = SubResource("RectangleShape2D_yakyo")
 
-[node name="Box" parent="." instance=ExtResource("1_ieelh")]
+[node name="Box" parent="." instance=ExtResource("2_moy3i")]
 position = Vector2(0, -200)
 collision_layer = 32768
 collision_mask = 32768
