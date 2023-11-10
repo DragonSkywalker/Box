@@ -18,7 +18,7 @@ func _process(delta):
 		else:
 			var layerTemp = boxLayer.instantiate()
 			layerTemp.new(cursor.gridPos.y)
-			layerTemp.position.x += cursor.gridPos.y * Game.boxDepth.y
+			layerTemp.get_node("Box").position.x += cursor.gridPos.x * Game.boxLength
 			add_child(layerTemp)
 	else:
 		sort()
