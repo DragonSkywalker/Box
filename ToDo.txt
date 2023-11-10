@@ -1,16 +1,16 @@
 Current:
-	Make drawing order of layers work
+
 
 ToDo:
-	Fix the new layer's x position 
-	Make Boxes not rely on gravity
-	Make cursor be on the place where there would be a box
+	1. name layer something else 
+	2. Fix the new layer's x position 
+	3. Make Boxes not rely on gravity
+	4. Make drawing layers of box work
+	5. Make cursor be on the place where there would be a box (vertical)
 		idea: 
 			give cursor collision (a smaller box in ceter)
 			if collide with a box on the same layer, move it up a space
 			and before moving the cursor, send it to ground level then move it
-
+	
+Whenever:
 	Make cursor 3D
-
-	maybe name layer something else 
-	since it can also mean drawing layer and collision layer
