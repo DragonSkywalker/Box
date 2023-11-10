@@ -22,3 +22,7 @@ func new(newLevel: int):
 	get_node("Box").set_collision_layer_value(16, false)
 	get_node("Box").set_collision_mask_value(16, false)
 
+#func sortBox():
+#	var i = 0
+#	for N in get_children():
+#
