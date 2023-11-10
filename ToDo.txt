@@ -1,9 +1,7 @@
 Current:
-
+	2. Fix the new layer's x position 
 
 ToDo:
-	1. name layer something else 
-	2. Fix the new layer's x position 
 	3. Make Boxes not rely on gravity
 	4. Make drawing layers of box work
 	5. Make cursor be on the place where there would be a box (vertical)
